@@ -1,0 +1,322 @@
+<html>
+<head>
+<title> Day care </title>
+<link rel="stylesheet" href="script.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+<style>
+/* ---------- Banner Section ---------- */
+#enroll-banner {
+  background: linear-gradient(135deg, #c6def1, #aac9e2);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#enroll-banner .banner-text h1 {
+  font-size: 3rem;
+  color: #4b2e83;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#enroll-banner .banner-text p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Animations */
+.animate-left, .animate-right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.animate-left.active {
+  opacity: 1;
+  animation: slideInLeft 1s forwards;
+}
+
+.animate-right.active {
+  opacity: 1;
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* ---------- Kid Friendly Heading ---------- */
+.kid-heading {
+  background: linear-gradient(135deg, #9b72cf, #226194);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 30px;
+  position: relative;
+}
+
+.kid-heading::after {
+  content: "⭐✨";
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* ---------- Enrollment Form Section ---------- */
+#enroll-section {
+  padding: 60px 0;
+  background: #f9f8ff;
+}
+
+#enroll-section .form-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#enroll-section label {
+  font-weight: 600;
+}
+
+#enroll-section input,
+#enroll-section textarea,
+#enroll-section select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#enroll-section textarea {
+  resize: none;
+}
+
+#enroll-section button {
+  background: linear-gradient(135deg, #9b72cf, #226194);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#enroll-section button:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 991px) {
+  #enroll-banner .banner-text, #enroll-section .form-container, #enroll-section .animation-side {
+    text-align: center;
+  }
+}
+
+/* ============================
+   ENROLL PAGE BANNER STYLING
+   ============================ */
+
+/* Full background banner */
+#enroll-banner {
+  width: 100%;                         
+  min-height: 600px;                   
+  background: url("images/webpage.jpeg") no-repeat center center;
+  background-size: cover;              
+  display: block;
+  position: relative;
+}
+
+</style>
+</head>
+<body>
+    <section id="nav-bar">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+  <img src="images/logo.webp" alt="Daycare Logo" width="120">
+</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+
+     <!-----Programs ------->
+<li class="nav-item">
+<a class="nav-link" href="programs.html">Programs</a>
+</li>
+  <!-------Locations dropdown-->
+<li class="nav-item">
+<a class="nav-link" href="locations.html">Locations</a>
+</li>
+<!----------Navbars------->
+
+<li class="nav-item">
+<a class="nav-link" href="aboutus.html">About</a>
+</li>
+
+          
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item">
+<a class="nav-link" href="https://portal.parent.cloud/public-waitlist-form/db7677db-e3a6-4b33-a607-c1ac498a4d0a">Join the wait list</a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+<!-- ====== Enrollment Banner ====== -->
+<section id="enroll-banner"></section>
+<!-- ====== Kid Friendly Heading ====== -->
+<section class="kid-heading my-5">
+  Register With Us ⭐✨
+</section>
+
+<!-- ====== Enrollment Form Section ====== -->
+<section id="enroll-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left: Animation / Image -->
+      <div class="col-lg-6 animation-side text-center">
+        <img src="images/kids.png" class="img-fluid" alt="Happy Kids Animation">
+      </div>
+
+      <!-- Right: Form -->
+     <div class="col-lg-6">
+  <div class="form-container">
+    <form id="enrollForm">
+      <div class="mb-3">
+        <label for="childName" class="form-label">Child's Name</label>
+        <input type="text" class="form-control" id="childName" name="childName" placeholder="Enter child's full name">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="parentName" class="form-label">Parent's Name</label>
+        <input type="text" class="form-control" id="parentName" name="parentName" placeholder="Enter parent's name">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+
+
+      <div class="mb-3">
+        <label for="additional" class="form-label">Anything we should know?</label>
+        <textarea class="form-control" id="additional" name="additional" rows="4" placeholder="Special instructions or notes"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100" id="thankYouModalLabel">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Your Request has been successfully received.</p>
+        <p>We will contact you soon!</p>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------------------TESTIMONIALS------------->
+
+<footer class="play-footer">
+  <div class="container py-5">
+
+    <div class="row justify-content-between">
+
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+         <h4 class="footer-title">Kids Valley Group</h4>
+        <p class="footer-text">
+          A fun, safe, and magical world for children to learn, laugh, and explore.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-subtitle">Contact Us</h5>
+    <p class="footer-text"><strong>Email:</strong> valleygroup32@gmail.com</p>
+        <p class="footer-text"><strong>Phone: </strong> 7802537200</p>
+      </div>
+
+      </div>
+
+
+    <hr class="footer-divider">
+
+    <p class="footer-copy">
+ © 2026 Kids Valley Group — All Rights Reserved <b style="color: #5a4d03;">Noor Consulting</b>
+    </p>
+  </div>
+</footer>
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("pUn6ewpZPI7fL8lTG");
+  })();
+
+  document.getElementById("enrollForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_gn3620c",
+      "template_0m8cs0m",
+      this
+    ).then(
+      function() {
+        var myModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        myModal.show();
+      },
+      function(error) {
+        alert("Failed to send. Error: " + JSON.stringify(error));
+      }
+    );
+  });
+</script>
+
+</body>
+</html>
+

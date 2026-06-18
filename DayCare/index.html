@@ -1,0 +1,357 @@
+<html>
+<head>
+<title> Day care </title>
+<link rel="stylesheet" href="script.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+</head>
+<body>
+  <!------------Section 1 -->
+<section id="nav-bar">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">
+  <img src="images/logo.webp" alt="Daycare Logo" width="120">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto" > 
+<li class="nav-item">
+<a class="nav-link" aria-current="page" href="#">Home</a>
+</li>
+
+<!-----Programs ------->
+<li class="nav-item">
+<a class="nav-link" href="programs.html">Programs</a>
+</li>
+
+  <!-------Locations dropdown-->
+<li class="nav-item">
+<a class="nav-link" href="locations.html">Locations</a>
+</li>
+<!----------Navbars------->
+
+<li class="nav-item">
+<a class="nav-link" href="aboutus.html">About us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Contact.html">Contact us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://portal.parent.cloud/public-waitlist-form/db7677db-e3a6-4b33-a607-c1ac498a4d0a">Join the wait list</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</section>
+
+
+  <!-- Hero Banner -->
+  <header class="hero-banner text-center  position-relative">
+   <video class="w-100" id="heroVideo" autoplay muted loop playsinline poster="images/banner.jpg">
+
+      <source src="images/banner.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="display-4 fw-bold animate__animated animate__fadeInDown content1">Planting the Seeds of Success!</h1>
+      <p class=" content2">We see the spark of greatness in every child.<br>
+      By combining structured lessons with creative exploration, 
+we build strong foundations for lifelong success.</p>
+     <a href="contact.html" class="custom-btn btn-lg mt-3 animate__animated animate__zoomIn animate__delay-2s">
+  Contact Us
+</a>
+
+    </div>
+  </header>
+
+
+<!---------Second Section-<------->
+
+<section id="sec2">
+  <div class="container text-center">
+    <h1 class="title">Our Programs</h1>
+    <div class="row text-center">
+
+      <div class="col-md-4 services">
+        <video class="service-video" muted loop preload="auto">
+          <source src="images/infant.mp4" type="video/mp4">
+        </video>
+         <a href="programs.html" class="service-link"> <h4>Infant Care </h4></a>
+        <p>Our Infant Care program provides a nurturing environment
+</p>
+      </div>
+
+
+      <div class="col-md-4 services">
+        <video class="service-video" muted loop preload="auto">
+          <source src="images/toddler.mp4" type="video/mp4">
+        </video>
+        <a href="programs.html" class="service-link"> <h4>Toddler Town </h4></a>
+        <p>Our Toddlers program builds independence through play and creativity.
+</p>
+      </div>
+
+      
+      <div class="col-md-4 services">
+        <video class="service-video" muted loop preload="auto">
+          <source src="images/kindergarden.mp4" type="video/mp4">
+        </video>
+         <a href="programs.html" class="service-link"> <h4>Kindergarten Care </h4></a>
+        <p>Our Kindergarten Care builds school readiness through hands-on learning and teamwork.
+</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-----------------About Us-------------------->
+<section id="about-us" class="py-5">
+  <div class="container py-4">
+    <h1 class="title text-center mb-5">WHY CHOOSE US?</h1>
+
+    <div class="row align-items-center">
+      <!-- LEFT SIDE: Accordion -->
+      <div class="col-md-6">
+        <div class="accordion" id="whyChooseUs">
+
+ <!-- Row 1 -->
+<div class="accordion-item mb-3">
+<h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                Purposeful Programs
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#whyChooseUs">
+              <div class="accordion-body">
+                Our approach balances play-based discovery with structured learning, helping children develop curiosity, independence, and a love for learning that lasts.
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+               Health & Well-Being First
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#whyChooseUs">
+              <div class="accordion-body">
+                Our spaces are carefully maintained to ensure cleanliness, organization, and safety at all times—giving families peace of mind every day.
+              </div>
+            </div>
+          </div>
+
+            <!-- Row 2 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Our staff are certified and experienced
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#whyChooseUs">
+              <div class="accordion-body">
+                Every teacher is certified, caring, and committed to early childhood education excellence.
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="accordion-item mb-3"> <!-- one full box----->
+            <h2 class="accordion-header" id="headingFour"> <!--just a wrapper-->
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                Rooted in Family Values
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#whyChooseUs">
+              <div class="accordion-body">
+                Families are at the heart of everything we do. We foster open communication, mutual trust, and a shared commitment to nurturing every child’s potential.
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- END of accordion -->
+        
+      </div> <!-- END of col-md-6 for accordion -->
+
+      <!-- RIGHT SIDE: Image -->
+      <div class="col-md-6 text-center">
+        <img src="images/Teacher.jpg" alt="Happy children playing" class="img-fluid rounded-4 shadow">
+          
+      </div>
+    </div> <!-- END of row -->
+  </div> <!-- END of container -->
+</section>
+
+
+<!------------Video Section------------>
+<section id="video-section" class="py-5">
+  <div class="container">
+
+    <!-- Heading above video -->
+    <div class="text-center mb-4">
+      <h2>Let Your Child Explore</h2>
+    </div>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT: Video -->
+      <div class="col-md-6 text-center justify-content-center">
+        <video class="magic-video" autoplay muted loop  playsinline>
+          <source src="images/daycare-vid.mp4" type="video/mp4" />
+          
+        </video>
+      </div>
+
+      <!-- RIGHT: Text content -->
+      <div class="col-md-6">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+   
+<h3 class="fw-bold mb-3">Learning Through Exploration</h3>
+<p>
+          We believe in hands-on learning that helps every child discover their curiosity.
+          Through play, creativity, and supportive guidance, we help children explore at their own pace.
+</p>
+<p>
+          ✨ Safe environment<br>
+          🎨 Creative activities<br>
+          💡 Developing confidence
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="section3" class="py-5">
+  <div class="container">
+<h1 class="content-header text-center mb-5"> Quality Care You Can Trust</h1>
+
+<h5 class=" section3-content text-center">We’re proud to meet and exceed the highest standards in child care and early learning. 
+  <br>Our unwavering commitment to excellence ensures your child receives the best possible care in a safe, nurturing, and stimulating environment</h5>
+</div>
+</section>
+
+
+
+<!------------Image Section------------>
+<section class="features-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT: Animated Checklist -->
+      <div class="col-md-6">
+        <div class="feature-box animate-left">
+          <ul class="checklist">
+            <li>Learning Through Play</li>
+            <li>Child-Guided Exploration</li>
+            <li>Developing Problem-Solving Skills</li>
+            <li>Encouraging Positive Relationships</li>
+            <li>Inspiring Curiosity and Wonder</li>
+            <li>Fostering Self-Reliance and Imagination</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT: Image -->
+      <div class="col-md-6 text-center">
+        <img src="images/image3.jpg"
+             alt="Children learning"
+             class="img-fluid rounded-4 shadow feature-img">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="Tour py-5">
+  <div class="container text-center">
+
+    <h1 class="content-header mb-5">
+      Book a Tour and Join Us
+    </h1>
+
+    <div class="mt-4">
+  <a href="contact.html" class="custom-btn me-3 btn-lg mt-3 animate__animated animate__zoomIn animate__delay-2s">
+    Book a Tour
+  </a>
+
+       <a href="aboutus.html" class="custom-btn btn-lg mt-3 animate__animated animate__zoomIn animate__delay-2s">
+ About Us
+</a>
+       
+    </div>
+
+  </div>
+</section>
+
+      <section id="show-video" class="py-5">
+        <div class="container text-center">
+          <!----Heading-->
+          <h2 class="mb-4">Watch the importance of Early Education</h2>
+
+          <!-----Video-->
+              <div class="video-wrapper">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/xkSRPR8u9Ac?si=T3WpeHjp2CQAxu2K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+
+
+
+      </section>
+<!-------------------TESTIMONIALS------------->
+
+<footer class="play-footer">
+  <div class="container py-5">
+
+    <div class="row justify-content-between">
+
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+           <img src="images/logo.webp" alt="Daycare Logo" width="120 ">
+        <p class="footer-text">
+          A fun, safe, and magical world for children to learn, laugh, and explore.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-subtitle">Contact Us</h5>
+          <p class="footer-text"><strong>Email:</strong> valleygroup32@gmail.com</p>
+        <p class="footer-text"><strong>Phone: </strong> 7802537200</p>
+      </div>
+
+      </div>
+
+
+    <hr class="footer-divider">
+
+    <p class="footer-copy">
+© 2026 Kids Valley Group — All Rights Reserved <b style="color: #5a4d03;">Noor Consulting</b>
+    </p>
+  </div>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll(".services");
+
+  cards.forEach(card => {
+    const video = card.querySelector("video");
+
+    card.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
