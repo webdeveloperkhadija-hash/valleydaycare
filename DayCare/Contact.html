@@ -160,8 +160,48 @@
 <a class="nav-link" href="programs.html">Programs</a>
 </li>
   <!-------Locations dropdown-->
-<li class="nav-item">
-<a class="nav-link" href="locations.html">Locations</a>
+ <!-------Locations dropdown-->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle"
+     href="locations.html"
+     id="navbarDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+     Locations
+  </a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a class="dropdown-item" href="suntree.html">
+        Suntree Daycare & OSC
+      </a>
+    </li>
+
+    <li>
+      <a class="dropdown-item" href="kids-valley.html">
+        Kids Valley Daycare & OSC Centre
+      </a>
+    </li>
+
+    <li>
+      <a class="dropdown-item" href="leduc-stars.html">
+        Leduc Stars Academy
+      </a>
+    </li>
+
+    <li>
+      <a class="dropdown-item" href="beaumont-stars.html">
+        Beaumont Stars Academy
+      </a>
+    </li>
+
+    <li>
+      <a class="dropdown-item" href="drayton-valley.html">
+        Drayton Valley Day Care
+      </a>
+    </li>
+  </ul>
 </li>
 <!----------Navbars------->
 
@@ -222,12 +262,47 @@
         <label for="phone" class="form-label">Phone</label>
         <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
       </div>
+<div class="mb-3">
+  <label for="centre" class="form-label">
+    Which Centre Are You Interested In?
+  </label>
 
+  <select class="form-control" id="centre" name="centre">
+    <option value="">Select a Centre</option>
+
+    <option value="Suntree Daycare & OSC">
+      Suntree Daycare & OSC
+    </option>
+
+    <option value="Kids Valley Daycare & OSC Centre">
+      Kids Valley Daycare & OSC Centre
+    </option>
+
+    <option value="Leduc Stars Academy">
+      Leduc Stars Academy
+    </option>
+
+    <option value="Beaumont Stars Academy">
+      Beaumont Stars Academy
+    </option>
+
+    <option value="Drayton Valley Day Care">
+      Drayton Valley Day Care
+    </option>
+
+    <option value="General Enquiry">
+      General Enquiry
+    </option>
+
+  </select>
+  </div>
 
       <div class="mb-3">
         <label for="additional" class="form-label">Anything we should know?</label>
         <textarea class="form-control" id="additional" name="additional" rows="4" placeholder="Special instructions or notes"></textarea>
       </div>
+
+      
 
       <button type="submit" class="btn btn-primary">Submit Request</button>
     </form>
